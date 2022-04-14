@@ -65,4 +65,9 @@ public class UserController {
         userRepository.delete(user);
         return "redirect:/index";
     }
+
+    @GetMapping("/sayhello/{id}")
+    public String sayHello(@PathVariable("id") String id) {
+        return "Hello " + id;
+    }
 }
