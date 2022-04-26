@@ -70,4 +70,9 @@ public class UserController {
     public String sayHello(@PathVariable("id") String id) {
         return "Hello " + id;
     }
+
+    @GetMapping("/saybye/{id}")
+    public String sayBye(@PathVariable("id") String id) {
+        return "bye " + id;
+    }
 }
